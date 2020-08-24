@@ -245,9 +245,6 @@ const FilterContainer = styled.div`
 `
 
 
-
-
-
 const Title = styled.div`
         font-family: 'Product Sans', sans-serif;
         text-transform: uppercase;
