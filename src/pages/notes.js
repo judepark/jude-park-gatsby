@@ -235,42 +235,18 @@ const FilterContainer = styled.div`
         display: inline-block;
         padding-right: 5px;
         transition: all 0.3s;
-        animation: ${appearAnimLeft} 0.3s;
     }
     h5.active::after {
         content:']';
         display: inline-block;
         padding-left: 5px;
         transition: all 0.3s;
-        animation: ${appearAnimRight} 0.3s;
     }
 `
 
-const appearAnimLeft = keyframes`
-    from {
-        transform: scale(0.8);
-        transform: translateX(10px);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        transform: translateX(0px);
-        opacity: 1;
-    }
-`
 
-const appearAnimRight = keyframes`
-    from {
-        transform: scale(0.8);
-        transform: translateX(-10px);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        transform: translateX(0px);
-        opacity: 1;
-    }
-`
+
+
 
 const Title = styled.div`
         font-family: 'Product Sans', sans-serif;
