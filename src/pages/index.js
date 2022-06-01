@@ -16,12 +16,11 @@ const IndexPage = ({data}) => (
 		<PageGrid>
 		<Row>
 	  	<Column>
-			<HeaderTitle><strong style={{fontWeight:"800"}}>Jude Park</strong> <br/> Designer, UX</HeaderTitle>
+			<HeaderTitle><strong style={{fontWeight:"800"}}>Jude Park</strong><br/>Designer, UX</HeaderTitle>
 			<Line>
 			<hr></hr>
 			</Line>
-			<HeaderSubtitle>Welcome! This is the site of a digital designer based in Toronto.</HeaderSubtitle>
-
+			<HeaderSubtitle>Welcome! This is the site of a user experience (UX) designer with over six years of experience in facilitation, research and design. Based in Toronto.</HeaderSubtitle>
 
 			<SiteSocial>
 				<li>
@@ -32,11 +31,11 @@ const IndexPage = ({data}) => (
 			</IconEnvelope>
 				</li>
 				<li>
-			<IconDribble>
-					<a href="https://dribbble.com/judepark/" target="_blank" rel="noopener noreferrer">
-						<FaDribbble size={iconSize}/>
+			<IconLinkedin>
+					<a href="https://www.linkedin.com/in/judepark/" target="_blank" rel="noopener noreferrer">
+						<FaLinkedin size={iconSize}/>
 					</a>
-			</IconDribble>
+			</IconLinkedin>
 				</li>
 				<li>
 			<IconGithub>
@@ -46,18 +45,11 @@ const IndexPage = ({data}) => (
 			</IconGithub>
 				</li>
 				<li>
-			<IconLinkedin>
-					<a href="https://www.linkedin.com/in/judepark/" target="_blank" rel="noopener noreferrer">
-						<FaLinkedin size={iconSize}/>
+			<IconDribble>
+					<a href="https://dribbble.com/judepark/" target="_blank" rel="noopener noreferrer">
+						<FaDribbble size={iconSize}/>
 					</a>
-			</IconLinkedin>
-				</li>
-				<li>
-			<IconTwitter>
-					<a href="https://twitter.com/judepark/" target="_blank" rel="noopener noreferrer">
-						<FaTwitter size={iconSize}/>
-					</a>
-			</IconTwitter>
+			</IconDribble>
 				</li>
 
 			</SiteSocial>
@@ -72,10 +64,203 @@ const IndexPage = ({data}) => (
 		</Column>
 		</Row>
 		</PageGrid>
+
+		<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+
+
+		
+
 		<br></br><br></br><br></br>
   </React.Fragment>
 )
 
+
+
+/*
+
+		<PageGrid >
+		<Row>
+	  	<Column>
+
+			<HeaderTitle><strong>What I do</strong></HeaderTitle>
+			<Line>
+			<hr></hr>
+			</Line>
+			<HeaderSubtitle>I map out what to build, and answer why design it.</HeaderSubtitle>
+
+		</Column>
+
+		<Column>
+		<ImageBlock>
+		<img src="What I Do.png" />
+		</ImageBlock>
+		</Column>
+		</Row>
+		</PageGrid>
+
+		<br></br><br></br>
+
+		<PageGrid>
+		<Row>
+
+		<Column>
+
+			<HeaderTitle><strong>Personas</strong></HeaderTitle>
+			<Line>
+			<hr></hr>
+			</Line>
+			<HeaderSubtitle>Humanizing the business problem into a people problem, personas and UX research help us to empathize and put down our biases when designing.</HeaderSubtitle>
+
+
+		</Column>
+
+		<Column>
+		<ImageBlock>
+		<div class="photo-grid-container">
+		<img src="Personas.png" />
+		</div>
+		</ImageBlock>
+		</Column>
+		
+		</Row>
+		</PageGrid>
+
+		<br></br><br></br>
+
+		<PageGrid>
+		<Row>
+	  	<Column>
+
+
+		  <HeaderTitle><strong>Experience Map</strong></HeaderTitle>
+			<Line>
+			<hr></hr>
+			</Line>
+			<HeaderSubtitle>Mapping the step-by-step sequence of the experience communicates the story behind the product. I look at it as storyboarding.</HeaderSubtitle>
+
+
+		</Column>
+
+		<Column>
+		<ImageBlock>
+		<div class="photo-grid-container">
+		<img src="Experience Map.png" />
+		</div>
+		</ImageBlock>
+		</Column>
+		</Row>
+		</PageGrid>
+
+		<br></br><br></br>
+
+		<PageGrid>
+		<Row>
+		<Column>
+
+		<HeaderTitle><strong>Features &<br/>Site Map</strong></HeaderTitle>
+			<Line>
+			<hr></hr>
+			</Line>
+			<HeaderSubtitle>Organizing the service(s) provided by the product into bare essentials, features and site maps identify the affordances that will solve needs.</HeaderSubtitle>
+		</Column>
+
+		<Column>
+		<ImageBlock>
+		<div class="photo-grid-container">
+		<img src="Wireframes.png" />
+		</div>
+		</ImageBlock>
+		</Column>
+
+		</Row>
+		</PageGrid>
+
+		<br></br><br></br>
+
+
+		<PageGrid>
+		<Row>
+	  	<Column>
+
+
+			<HeaderTitle><strong>Layouts & <br/>Wireframes</strong></HeaderTitle>
+			<Line>
+			<hr></hr>
+			</Line>
+			<HeaderSubtitle>Creating a blueprint with logic sequence builds the flow of the product, and wireframes visualizes the system of key interactive elements.</HeaderSubtitle>
+
+
+		</Column>
+
+		<Column>
+
+		</Column>
+		</Row>
+		</PageGrid>
+
+		<br></br><br></br>
+
+		<PageGrid>
+		<Row>
+
+		<Column>
+
+			<HeaderTitle><strong>Prototyping</strong></HeaderTitle>
+			<Line>
+			<hr></hr>
+			</Line>
+			<HeaderSubtitle>Developing replications of the product that can successfully deliver value. The goal of prototyping is to put it in front of users and gain feedback - positive or negative.</HeaderSubtitle>
+
+		</Column>
+
+		<Column>
+
+		</Column>
+
+		</Row>
+		</PageGrid>
+
+		<br></br><br></br>
+
+		<PageGrid>
+		<Row>
+	  	<Column>
+
+			<HeaderTitle><strong>Usability Testing</strong></HeaderTitle>
+			<Line>
+			<hr></hr>
+			</Line>
+			<HeaderSubtitle>Testing provides valuable insights that determine how to fine-tune a successful service delivery. In a good feedback loop, testing will guide the team to discover the true purpose of the product.</HeaderSubtitle>
+
+		</Column>
+
+		<Column>
+
+		</Column>
+		</Row>
+		</PageGrid>
+
+		<br></br><br></br><br></br>
+
+		<PageGrid>
+		<Row>
+	  	<Column>
+
+		</Column>
+
+		<Column>
+
+			<HeaderTitle><strong>Testimonials</strong></HeaderTitle>
+			<Line>
+			<hr></hr>
+			</Line>
+			<HeaderSubtitle></HeaderSubtitle>
+			
+		</Column>
+		</Row>
+		</PageGrid>
+
+*/
 
 const PageGrid = styled.div`
 	display: grid;
@@ -113,7 +298,7 @@ const Line = styled.p`
   width: 350px;
 `
 
-const HeaderSubtitle = styled.h3`
+const HeaderSubtitle = styled.h4`
 	margin-bottom: 24px;
 	max-width: 350px;
 	font-size: 21px;
@@ -148,7 +333,7 @@ const SiteSocial = styled.ul`
 			font-size: 0.7rem;
 			font-weight: 500;
 			text-decoration: none;
-			transition: all 0.6s;
+			transition: ;
 			&:hover {
 	
 			}
@@ -202,7 +387,11 @@ const Video = styled.div`
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
+	left: 0;
+	margin-top: 40px;
+	@media(max-width: 1000px) {
+		width: 350px;
+	}
 `
 
 
@@ -227,6 +416,19 @@ const VideoLoader = styled.div`
 		margin-top: 170px;
 	}
 `
+
+const ImageBlock = styled.div`
+	img {
+		max-width: 100%;
+		box-shadow: 6px 6px 14px #555;
+		background-color: #f8f7f3;
+		margin-top: 40px;
+		@media(max-width: 1000px) {
+			width: 350px;
+		}
+	}
+`
+
 
 export default IndexPage
 

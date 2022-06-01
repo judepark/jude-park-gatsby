@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from "gatsby"
 import styled, { keyframes } from 'styled-components'
-import WorkCard from '../components/WorkCard';
+import NoteCard from '../components/NoteCard';
  
 import {fadeInDown} from '../animations/m-styled-animations'
 
@@ -43,17 +43,17 @@ const filterClickBoth = () => {
 }
 
 /**
- * Filters the Design works, anything that contains "Design" using *
+ * Filters the Inclusive Design note items, anything that contains "Inclusive Design" using *
  *
  */
- const filterClickDesign = () => {
-    let DesignItems = document.querySelectorAll('[data-filter*="Design"]')
+const filterClickInclusiveDesign = () => {
+    let InclusiveDesignItems = document.querySelectorAll('[data-filter*="InclusiveDesign"]')
 
     clearFilterItemsActive();
-    document.querySelector('#FilterItemDesign').classList.add('active');
+    document.querySelector('#FilterItemInclusiveDesign').classList.add('active');
 
     setTimeout(() => {
-        DesignItems.forEach(item => {
+        InclusiveDesignItems.forEach(item => {
             item.classList.add('active');
         })
     }, 50)
@@ -61,35 +61,17 @@ const filterClickBoth = () => {
 
 
 /**
- * Filters the UX Research works, anything that contains "UX Research" using *
+ * Filters the UX in Public Service notes, anything that contains "UX in Public Service" using *
  *
  */
-const filterClickUXResearch = () => {
-    let UXResearchItems = document.querySelectorAll('[data-filter*="UX Research"]')
+const filterClickUXinPublicService = () => {
+    let UXinPublicServiceItems = document.querySelectorAll('[data-filter*="UXinPublicService"]')
 
     clearFilterItemsActive();
-    document.querySelector('#FilterItemUXResearch').classList.add('active');
+    document.querySelector('#FilterItemUXinPublicService').classList.add('active');
 
     setTimeout(() => {
-        UXResearchItems.forEach(item => {
-            item.classList.add('active');
-        })
-    }, 50)
-}
-
-
-/**
- * Filters the other works, anything that contains "Other" using *
- *
- */
-const filterClickOther = () => {
-    let OtherItems = document.querySelectorAll('[data-filter*="Other"]')
-
-    clearFilterItemsActive();
-    document.querySelector('#FilterItemOther').classList.add('active');
-
-    setTimeout(() => {
-        OtherItems.forEach(item => {
+        UXinPublicServiceItems.forEach(item => {
             item.classList.add('active');
         })
     }, 50)
@@ -99,16 +81,17 @@ const filterClickOther = () => {
 
 
 
-const WorkPage = ({data}) => (
+
+const ResearchPage = ({data}) => (
   <React.Fragment>
 	<PageGrid>
     <Row>
         <Column>
-            <HeaderTitle>Work</HeaderTitle>
+            <HeaderTitle>Research</HeaderTitle>
             <Line>
             <hr></hr>
             </Line>
-            <HeaderSubtitle>Projects I worked on.</HeaderSubtitle>
+            <HeaderSubtitle>Topics I am interested in.</HeaderSubtitle>
         </Column>
 
         <Column>
@@ -123,15 +106,13 @@ const WorkPage = ({data}) => (
         <Column>
         <FilterContainer id="FilterContainer">
             <h5 className="active" onClick={filterClickBoth} id="FilterItemAll">ALL</h5>
-            <h5 onClick={filterClickDesign} id="FilterItemDesign">DESIGN</h5>
-            <h5 onClick={filterClickUXResearch} id="FilterItemUXResearch">UX RESEARCH</h5>
-            <h5 onClick={filterClickOther} id="FilterItemOther">Other</h5>
-
+            <h5 onClick={filterClickInclusiveDesign} id="FilterItemInclusiveDesign">INCLUSIVE DESIGN</h5>
+            <h5 onClick={filterClickUXinPublicService} id="FilterItemUXinPublicService">UX IN PUBLIC SERVICE</h5>
         </FilterContainer>
 
 		<NoteCardGrid>
 			{data.allMarkdownRemark.edges.map(({node}) => (
-				<WorkCard data={node} key={node.key}></WorkCard>
+				<NoteCard data={node} key={node.key}></NoteCard>
 			))}
 		</NoteCardGrid>
         </Column>
@@ -168,6 +149,32 @@ const WorkPage = ({data}) => (
             </a>
 
         </BookShelfContainer>
+
+
+
+
+
+
+ * Filters the other works, anything that contains "Other" using *
+ *
+
+ const filterClickOther = () => {
+    let OtherItems = document.querySelectorAll('[data-filter*="Other"]')
+
+    clearFilterItemsActive();
+    document.querySelector('#FilterItemOther').classList.add('active');
+
+    setTimeout(() => {
+        OtherItems.forEach(item => {
+            item.classList.add('active');
+        })
+    }, 50)
+}
+
+
+            <h5 onClick={filterClickOther} id="FilterItemOther">Other</h5>
+
+            
 */
 
 const PageGrid = styled.div`
@@ -208,7 +215,7 @@ const Line = styled.p`
 
 const HeaderSubtitle = styled.h4`
 	margin-bottom: 130px;
-	max-width: 350px;
+	max-width: 450px;
 	font-size: 21px;
 	color: rgba(0, 0, 0, 0.65);
 	font-weight: 400;
@@ -306,13 +313,13 @@ const BookShelfContainer = styled.div`
     }
 `
 
-export default WorkPage
+export default ResearchPage
 
 export const query = graphql`
-query WorkQuery {
+query ResearchQuery {
 	allMarkdownRemark(
         sort: {fields: [frontmatter___date], order: DESC},
-        filter: { fileAbsolutePath: {regex : "\/work/"} }
+        filter: { fileAbsolutePath: {regex : "\/research/"} }
         ) {
 		edges {
 		  node {
@@ -321,8 +328,7 @@ query WorkQuery {
 			}
 			frontmatter {
 			  title
-              worksummary 
-              workheading
+			  notebrief
 			  color
 			  image {
 				childImageSharp {
@@ -339,7 +345,7 @@ query WorkQuery {
 				}
               }
               categories
-              date(formatString: "YYYY")
+              date(formatString: "MMM D, YYYY")
 			}
 		  }
 		}

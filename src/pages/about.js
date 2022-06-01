@@ -16,11 +16,14 @@ const AboutPage = ({data}) => (
       <Line>
         <hr></hr>
       </Line>
-      <HeaderSubtitle>Jude.</HeaderSubtitle>
+      <HeaderSubtitle>Me.</HeaderSubtitle>
     </Column>
 
     <Column>
     
+      
+
+
     </Column>
 
     </Row>
@@ -32,61 +35,73 @@ const AboutPage = ({data}) => (
     <Column>
 
       <Title>
-      EXPERIENCE
+      WORK EXPERIENCE
       </Title>
+
       <Content>
       <ul style={{marginLeft: "0"}}>
-      <h2 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>UX Designer</h2>
-      <WorkLink><a href="https://tc.canada.ca/en" target="_blank" rel="noopener noreferrer"><h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>Transport Canada</h3></a></WorkLink>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.50)", marginBottom: "20px"}}>2020</h4>
+      <h3 style={{margin:"0", lineHeight:"1.25", fontWeight: "800"}}>User Experience Designer</h3>
+      <WorkLink><a href="http://www.ic.gc.ca/eic/site/icgc.nsf/eng/home" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Government of Canada</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", margin:"0", lineHeight:"1.25"}}>Innovation, Science and Economic Development</h4></a></WorkLink>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", marginBottom: "20px"}}>2021-current</h4>
       </ul>
       <ul style={{marginLeft: "0"}}>
-      <h2 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>UX Designer</h2>
-      <WorkLink><a href="https://www.ventureforcanada.ca/" target="_blank" rel="noopener noreferrer"><h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>Venture for Canada</h3></a></WorkLink>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.50)", marginBottom: "20px"}}>2018-2019</h4>
+      <h3 style={{margin:"0", lineHeight:"1.25", fontWeight: "800"}}>Design Researcher</h3>
+      <WorkLink><a href="https://tc.canada.ca/en" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Government of Canada</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", margin:"0", lineHeight:"1.25"}}>Transport Canada</h4></a></WorkLink>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", marginBottom: "20px"}}>2020-2021</h4>
       </ul>
       <ul style={{marginLeft: "0"}}>
-      <h2 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>UX Designer</h2>
-      <WorkLink><a href="https://jobs.rbc.com/ca/en/amplify" target="_blank" rel="noopener noreferrer"><h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>Royal Bank of Canada</h3></a></WorkLink>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.50)", marginBottom: "20px"}}>2017-2018</h4>
+      <h3 style={{margin:"0", lineHeight:"1.25", fontWeight: "800"}}>UI & UX Designer</h3>
+      <WorkLink><a href="https://codefor.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Code for Canada</h4></a></WorkLink><br/><WorkLink><a href="https://www.ventureforcanada.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{color: "hsla(0, 0%, 0%, 0.65)", lineHeight:"1.25", fontWeight: "400"}}>Venture for Canada</h4></a></WorkLink><br/><WorkLink><a href="https://jobs.rbc.com/ca/en/amplify" target="_blank" rel="noopener noreferrer"><h4 style={{color: "hsla(0, 0%, 0%, 0.65)", lineHeight:"1.25", fontWeight: "400"}}>Royal Bank of Canada</h4></a></WorkLink>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", marginBottom: "20px"}}>2016-2020</h4>
       </ul>
       <ul style={{marginLeft: "0"}}>
-      <h2 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>Librarian</h2>
-      <WorkLink><a href="https://www.torontopubliclibrary.ca/" target="_blank" rel="noopener noreferrer"><h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>TPL</h3></a></WorkLink> / <WorkLink><a href="https://its.utoronto.ca/" target="_blank" rel="noopener noreferrer"><h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>UofT</h3></a></WorkLink> / <WorkLink><a href="https://www.ontario.ca/page/government-ontario" target="_blank" rel="noopener noreferrer"><h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>OPS</h3></a></WorkLink>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.50)", marginBottom: "60px"}}>2009-2016</h4>
+      <h3 style={{margin:"0", lineHeight:"1.25", fontWeight: "800"}}>Librarian & Information Management</h3>
+      <WorkLink><a href="https://www.torontopubliclibrary.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Toronto Public Library</h4></a></WorkLink><br/><WorkLink><a href="https://its.utoronto.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{color: "hsla(0, 0%, 0%, 0.65)", lineHeight:"1.25", fontWeight: "400"}}>University of Toronto</h4></a></WorkLink><br/><WorkLink><a href="https://www.ontario.ca/page/government-ontario" target="_blank" rel="noopener noreferrer"><h4 style={{color: "hsla(0, 0%, 0%, 0.65)", lineHeight:"1.25", fontWeight: "400"}}>Ontario Public Service</h4></a></WorkLink>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", marginBottom: "60px"}}>2009-2016</h4>
       </ul>
       </Content>
 
+
       <Title>
-      EDUCATION
+      EDUCATION & TRAINING
       </Title>
 
       <Content>
       <ul style={{marginLeft: "0"}}>
-      <h3 style={{marginBottom:"10px", lineHeight:"1.35", fontWeight: "800"}}>User Experience Design<br/>Information Systems Design</h3>
-      <WorkLink><a href="https://www.utoronto.ca/" target="_blank" rel="noopener noreferrer"><h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>University of Toronto</h3></a></WorkLink>
+      <h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>Master of Information</h3>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", marginTop:"10px", marginBottom:"10px", lineHeight:"1.35", fontWeight: "800"}}>Information Systems Design<br/>User Experience Design</h4>
+      <WorkLink><a href="https://www.utoronto.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>University of Toronto</h4></a></WorkLink>
       <h4 style={{color: "hsla(0, 0%, 0%, 0.50)", marginBottom: "20px"}}>2016-2018</h4>
       </ul>
       <ul style={{marginLeft: "0"}}>
-      <h3 style={{marginBottom:"10px", lineHeight:"1.35", fontWeight: "800"}}>Anthropology<br/>History<br/>Linguistics</h3>
-      <WorkLink><a href="https://www.trentu.ca/" target="_blank" rel="noopener noreferrer"><h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>Trent University</h3></a></WorkLink>
+      <h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>Bachelor of Arts</h3>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", marginTop:"10px", marginBottom:"10px", lineHeight:"1.35", fontWeight: "800"}}>Anthropology<br/>History<br/>Linguistics</h4>
+      <WorkLink><a href="https://www.trentu.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>Trent University</h4></a></WorkLink>
       <h4 style={{color: "hsla(0, 0%, 0%, 0.50)", marginBottom: "60px"}}>2009-2012, 2016</h4>
       </ul>
       </Content>  
 
 
+
+
       <Title>
-      ABOUT JUDE
+      LANGUAGES
       </Title>
+
       <Content>
-      <ul style={{marginLeft: "0", color: "hsla(0, 0%, 0%, 0.80)", maxWidth:"390px", marginBottom: "60px"}}>
-      Jude specializes in visualizing user data. He designs layouts, websites and apps, and likes to practice storytelling through animation and art. 
-      He currently lives in Toronto with his partner.
+      <ul style={{marginLeft: "0"}}>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Korean</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800", marginBottom: "60px"}}>English</h4>
       </ul>
       </Content>
+
     </Column>
 
+
     <Column>
+
       <Title>
       FAVOURITE TOOLS
       </Title>
@@ -94,59 +109,28 @@ const AboutPage = ({data}) => (
       <Content>
       <ul style={{marginLeft: "0"}}>
         <ToolShelf>
+          
           <div class="grid-img">
-            <img src="https://66.media.tumblr.com/aab3e12a5e711fdb5a616313754e65cd/tumblr_pwpexqLa9N1taz7avo1_1280.png" alt="InDesign" width="60"></img>
-            
-            <Item style={{marginRight: "10px"}}>
-            InDesign
-            </Item>
-          </div>
-
-          <div class="grid-img">
-            <img src="https://66.media.tumblr.com/05458add5990eecd59c2995f8269f544/tumblr_pwpfnleSPb1taz7avo1_500.png" alt="Photoshop" width="60"></img>
-            
-            <Item style={{marginRight: "10px"}}>
-            Photoshop
-            </Item>
-          </div>
-
-          <div class="grid-img">
-            <img src="https://66.media.tumblr.com/b7fcea2b3a067dad452bfea91523fc7c/tumblr_pwpjubX39p1taz7avo1_640.png" alt="Illustrator" width="60"></img>
-            
-            <Item style={{marginRight: "10px"}}>
-            Illustrator
-            </Item>
-          </div>
-
-          <div class="grid-img">
-            <img src="https://66.media.tumblr.com/52633729d85703723cf52f8ca5000f9c/tumblr_pwsp9kLocD1taz7avo1_1280.png" alt="After Affects" width="60"></img>
-            
-            <Item style={{marginRight: "10px"}}>
-            After Effects
-            </Item>
-          </div>
-
-          <div class="grid-img">
-            <img src="https://66.media.tumblr.com/e8293f9c4ccbd080dbcc29c2609ea9d4/43ee8e5089c2299d-02/s640x960/70225bb23fb3ccb16cf769dd3d2f81fa24161e59.png" alt="XD" width="60"></img>
-            
-            <Item style={{marginRight: "10px"}}>
-            Blender
-            </Item>
-          </div>
-
-          <div class="grid-img">
-            <img src="https://66.media.tumblr.com/9f4c2598ee3f12d78d35065639f8e243/tumblr_pwpk1jX3UZ1taz7avo1_500.png" alt="Figma" width="60"></img>
+            <img src="https://64.media.tumblr.com/3989de26cb05b3503924882c14e7a8cc/6d5fde614fe47287-bd/s640x960/3326505e3b5c37fcfe68f1fca338acc65ad4574f.png" alt="Figma" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
             Figma
             </Item>
           </div>
-
+          
           <div class="grid-img">
-            <img src="https://66.media.tumblr.com/94ed2aab90612ce035578613dd521b83/tumblr_pwpk03Xf5E1taz7avo1_1280.png" alt="Sketch" width="60"></img>
+            <img src="https://64.media.tumblr.com/aff84866df52830e1291de352a73fbea/a24a727ed83cabb8-59/s500x750/f33e96a5235de60916c23a05013cd7163ca249d3.png" alt="Airtable" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
-            Sketch
+            Airtable
+            </Item>
+          </div>
+
+          <div class="grid-img">
+            <img src="https://64.media.tumblr.com/78b2001a45bb8a56c36e34037288cfb6/2fed1712a927064c-5e/s640x960/9ee311d32910538df4147c9c50aa82630c380c5f.png" alt="Procreate" width="60"></img>
+            
+            <Item style={{marginRight: "10px"}}>
+            Procreate
             </Item>
           </div>
 
@@ -159,70 +143,105 @@ const AboutPage = ({data}) => (
           </div>
 
           <div class="grid-img">
-            <img src="https://64.media.tumblr.com/aff84866df52830e1291de352a73fbea/a24a727ed83cabb8-59/s500x750/f33e96a5235de60916c23a05013cd7163ca249d3.png" alt="Airtable" width="60"></img>
+            <img src="https://66.media.tumblr.com/aab3e12a5e711fdb5a616313754e65cd/tumblr_pwpexqLa9N1taz7avo1_1280.png" alt="InDesign" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
-            Airtable
+            InDesign
             </Item>
           </div>
+
+          <div class="grid-img">
+            <img src="          https://64.media.tumblr.com/55fd5f506fdf92a5a8f0bc1ca5090029/fa5aafd1e8e637bf-ba/s500x750/56bf0fd9d6ed8ed98e299283a797e5d8595bec89.gifv" alt="Tableau" width="60"></img>
+            
+            <Item style={{marginRight: "10px"}}>
+            Tableau
+            </Item>
+          </div>
+
+
+          <div class="grid-img">
+            <img src="https://66.media.tumblr.com/e8293f9c4ccbd080dbcc29c2609ea9d4/43ee8e5089c2299d-02/s640x960/70225bb23fb3ccb16cf769dd3d2f81fa24161e59.png" alt="Blender" width="60"></img>
+            
+            <Item style={{marginRight: "10px"}}>
+            Blender
+            </Item>
+          </div>
+
+          <div class="grid-img">
+            <img src="https://66.media.tumblr.com/52633729d85703723cf52f8ca5000f9c/tumblr_pwsp9kLocD1taz7avo1_1280.png" alt="After Affects" width="60"></img>
+            
+            <Item style={{marginRight: "10px"}}>
+            After Effects
+            </Item>
+          </div>
+
         </ToolShelf>
         </ul>
       </Content>  
 
+
       <Title style={{marginTop: "60px"}}>
-      SKILLS
+      SPECIALTIES
       </Title>
+
       <Content>
       <ul style={{marginLeft: "0"}}>
-      <h3 style={{fontWeight: "800"}}>User Research, Qualitative/Quantitative</h3>
-      <h3 style={{fontWeight: "800"}}>User Experience Design</h3>
-      <h3 style={{fontWeight: "800"}}>Experience Mapping</h3>
-      <h3 style={{fontWeight: "800"}}>Data Visualization</h3>
-      <h3 style={{fontWeight: "800"}}>Web/Mobile Interaction Design</h3>
-      <h3 style={{fontWeight: "800", marginBottom: "60px"}}>Frontend Development</h3>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Inclusive Design</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Usability Testing</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Experience Mapping</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Design Thinking Facilitation</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800", marginBottom: "60px"}}>Front-End Development</h4>
       </ul>
       </Content>
 
+
       <Title>
-      HOBBIES
+      HELLO!
       </Title>
+
       <Content>
       <ul style={{marginLeft: "0"}}>
-      <h4 style={{fontWeight: "800", color: "hsla(0, 0%, 0%, 0.80)"}}>Dancing</h4>
-      <h4 style={{fontWeight: "800", color: "hsla(0, 0%, 0%, 0.80)"}}>Swimming</h4>
-      <h4 style={{fontWeight: "800", color: "hsla(0, 0%, 0%, 0.80)", marginBottom: "60px"}}>Brazilian Ju Jitsu</h4>
+      <h4 style={{marginBottom: "60px", maxWidth:"400px"}}>
+        My name is Jude and I currently work for the Government of Canada as a User Experience Designer.
+        You can usually find me working in digital government initiatives, researching and designing services that help Canadians.
+        <br/><br/>
+        Feel free to read through my CV and How I Work below. If you want to work together, let's chat.
+      </h4>
+      </ul>
+      </Content> 
+
+
+      <Title>
+      DOWNLOAD
+      </Title>
+
+      <Content>
+      <ul style={{marginLeft: "0"}}>
+      <WorkLink><a href="https://www.torontopubliclibrary.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>CV/Resume <b>⭳</b></h4></a></WorkLink>
+      </ul>
+      <ul style={{marginLeft: "0", marginBottom: "60px"}}>
+      <WorkLink><a href="https://www.torontopubliclibrary.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>How I Work <b>⭳</b></h4></a></WorkLink>
       </ul>
       </Content>
 
-      <Title>
-      LANGUAGES
-      </Title>
-      <Content>
-      <ul style={{marginLeft: "0", color: "hsla(0, 0%, 0%, 0.80)"}}>
-      <h4 style={{fontWeight: "800", color: "hsla(0, 0%, 0%, 0.80)"}}>Korean</h4>
-      <h4 style={{fontWeight: "800", color: "hsla(0, 0%, 0%, 0.80)", marginBottom: "60px"}}>English</h4>
-      </ul>
-      </Content>
-
-      <Title>
-      CV
-      </Title>
-      <Content>
-      <ul style={{marginLeft: "0", color: "hsla(0, 0%, 0%, 0.80)"}}>
-      <WorkLink><a href="https://www.torontopubliclibrary.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{fontWeight: "800", color: "hsla(0, 0%, 0%, 0.80)"}}>Download ⭳</h4></a></WorkLink>
-      </ul>
-      </Content>
     </Column>
-
     </Row>
 	  </PageGrid>
-    
-
     <br></br><br></br><br></br>
   </React.Fragment>
 )
 
 /*
+
+
+
+      <Image>
+      <div class="drop-shadow">
+      <img src="https://66.media.tumblr.com/2d51783599d2047d02926c6ba426936d/333e5e774516d2ae-57/s1280x1920/8c1e79d39031b2a7ae65f1be748a3ff3d0cebef6.jpg" alt="" width="290"></img>
+      </div>
+      </Image> 
+
+
     <Title>
     ME AS A KID
     </Title>
@@ -371,6 +390,71 @@ const AboutPage = ({data}) => (
     </PageGrid>
   
 
+
+        <Title>
+      ABOUT JUDE
+      </Title>
+      <Content>
+      <ul style={{marginLeft: "0", color: "hsla(0, 0%, 0%, 0.80)", maxWidth:"390px", marginBottom: "60px"}}>
+      Jude specializes in visualizing user data. He designs layouts, websites and apps, and likes to practice storytelling through animation and art. 
+      He currently lives in Toronto with his partner.
+      </ul>
+      </Content>
+
+      
+          <div class="grid-img">
+            <img src="https://66.media.tumblr.com/05458add5990eecd59c2995f8269f544/tumblr_pwpfnleSPb1taz7avo1_500.png" alt="Photoshop" width="60"></img>
+            
+            <Item style={{marginRight: "10px"}}>
+            Photoshop
+            </Item>
+          </div>
+
+      <ul style={{marginLeft: "0"}}>
+      <h4 style={{fontWeight: "800", color: "hsla(0, 0%, 0%, 0.80)"}}>Research</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Design Research</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Ethnographic/Field Research</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Participatory/Co-Design</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Concept Testing</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Process Mapping</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)", marginBottom: "20px"}}>Affinity Analysis</h4>
+      </ul>
+      <ul style={{marginLeft: "0"}}>
+      <h4 style={{fontWeight: "800", color: "hsla(0, 0%, 0%, 0.80)"}}>Design</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Human-Centered Design</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Design Thinking</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Service Design</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Inclusive Design</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)", marginBottom: "20px"}}>Experience Mapping</h4>
+      </ul>
+      <ul style={{marginLeft: "0"}}>
+      <h4 style={{fontWeight: "800", color: "hsla(0, 0%, 0%, 0.80)"}}>Product</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Design Strategy</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Stakeholder Engagement</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Wireframing/Prototyping</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Web/Mobile Interaction Design</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)"}}>Front-end Development</h4>
+      <h4 style={{fontWeight: "400", color: "hsla(0, 0%, 0%, 0.80)", marginBottom: "60px"}}>Usability Testing</h4>
+      </ul>
+
+
+
+
+      
+      <Title>
+      HOBBIES
+      </Title>
+
+      <Content>
+      <ul style={{marginLeft: "0"}}>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Ballet</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Swimming</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Piano</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>DnD</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800", marginBottom: "60px"}}>Brazilian Jiu-Jitsu</h4>
+      </ul>
+      </Content>
+
 */
 
 const PageGrid = styled.div`
@@ -414,7 +498,7 @@ const Line = styled.p`
     width: 350px;
 `
 
-const HeaderSubtitle = styled.h3`
+const HeaderSubtitle = styled.h4`
 	margin-bottom: 130px;
 	max-width: 350px;
 	font-size: 21px;
@@ -429,17 +513,15 @@ const HeaderSubtitle = styled.h3`
 
 const Image = styled.div`
   display: flex;
-	justify-content: center;
+	justify-content: left;
   align-items: center;
+  margin-bottom: 60px;
   animation: ${fadeInDown} 1s;
   filter: grayscale(60%);
   &:hover {
     filter: opacity(90%);
     filter: contrast(120%);
 }
-  @media(max-width: 1000px) {
-		margin-bottom: 100px;
-	}
 `
 
 const Title = styled.div`
@@ -451,7 +533,7 @@ const Title = styled.div`
   line-height: 165%;
   color: hsla(0, 0%, 0%, 0.65);
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 38px;
   padding: 0;
   animation: ${fadeInDown} 1.5s;
   transition: all 0.3s;
@@ -529,6 +611,7 @@ const Item = styled.div`
     margin-bottom: 0px;
     margin-top: -30px;
     line-height: 1.25;
+    color: hsla(0, 0%, 0%, 0.65); 
 `
 
 const Item2 = styled.div`
@@ -544,10 +627,11 @@ const Item2 = styled.div`
 `
 
 const Content = styled.div`
+margin-bottom: 20px;
     h2 {
       font-size: calc(25px + (30 - 25) * (100vw - 400px) / (1300 - 400) );
     }
-    h2, h3, h4 {
+    h2, h3, h4, ul {
       animation: ${fadeInDown} 1s;
     }
     ul {
@@ -564,6 +648,7 @@ const WorkLink = styled.div`
       animation: ${MoveUp} 0.3s;
       animation-fill-mode: forwards;
    }
+ 
 `
 
 export default AboutPage

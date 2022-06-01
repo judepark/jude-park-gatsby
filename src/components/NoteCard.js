@@ -116,6 +116,7 @@ const PreviewContainer = styled.div`
         left: 0;
         padding: 0px;
         margin: 0px;
+        box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%) ;
     }
 
     @media(max-width: 1000px) {

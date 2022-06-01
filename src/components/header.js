@@ -14,7 +14,7 @@ const Header = () => (
 
 			<LinkDisplay>
 			<LinkWork><Link to="/work" activeStyle={{ fontWeight: 700, color: 'hsla(0, 0%, 0%, 0.80)' }}>WORK</Link></LinkWork>
-			<LinkBlog><Link to="/notes" activeStyle={{ fontWeight: 700, color: 'hsla(0, 0%, 0%, 0.80)' }}>NOTES</Link></LinkBlog>
+			<LinkBlog><Link to="/research" activeStyle={{ fontWeight: 700, color: 'hsla(0, 0%, 0%, 0.80)' }}>RESEARCH</Link></LinkBlog>
 			<LinkAbout><Link to="/about"activeStyle={{ fontWeight: 700, color: 'hsla(0, 0%, 0%, 0.80)' }}>ABOUT</Link></LinkAbout>
 			</LinkDisplay>
 

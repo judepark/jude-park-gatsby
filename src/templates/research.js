@@ -5,9 +5,12 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import {fadeInDown, fadeInScaleDown, MoveUp} from './../animations/m-styled-animations'
+import {fadeInDown, fadeInScaleDown} from '../animations/m-styled-animations'
 
 import LiveContentCard from '../components/LiveContentCard'
+
+import {FaRegImage} from 'react-icons/fa'
+import {FaCreativeCommons} from 'react-icons/fa'
 
 import {FaEnvelope} from 'react-icons/fa'
 import {FaLinkedin} from 'react-icons/fa'
@@ -17,9 +20,11 @@ import {FaGithub} from 'react-icons/fa'
 
 const iconSize = 23;
 
+const iconSize2 = 15;
+
 const SIZE_MOBILE = "715px";
 
-export default function WorkTemplate({ data }) {
+export default function Template({ data }) {
 	return (
 		<React.Fragment>
 
@@ -29,73 +34,47 @@ export default function WorkTemplate({ data }) {
 <Row>
 <Column>
 
-	<Helmet title={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}>
-        <meta name="theme-color" content={data.markdownRemark.frontmatter.color}/>
-	</Helmet>
-
-
-	<WorkHeader color={data.markdownRemark.frontmatter.color}>
-
-		<a href={data.markdownRemark.frontmatter.url} target="_blank" rel="noopener noreferrer"><Img style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid}/></a>
-		<WorkPostTitle>
-		<a href={data.markdownRemark.frontmatter.url} target="_blank" rel="noopener noreferrer"><HeaderTitle>{data.markdownRemark.frontmatter.title}</HeaderTitle></a>
-		<HeaderSubtitle>{data.markdownRemark.frontmatter.workheading}</HeaderSubtitle>
-		<Line>
-			<hr></hr>
-		</Line>
-
-		<HeaderColumn> 
-			<HeaderDescription>
-				{data.markdownRemark.frontmatter.worksummary}
-			</HeaderDescription>
-
-			<NonExistentLine/>
-
-			<HeaderMetadata>
-				<h5 style={{lineHeight:"1.25"}}>Year</h5>
-				<h4 style={{lineHeight:"1.25", marginBottom:"15px"}}>{data.markdownRemark.frontmatter.year}</h4>
-
-				<h5 style={{lineHeight:"1.25"}}>My Role</h5>
-				<h4 style={{lineHeight:"1.25", marginBottom:"15px"}}>{data.markdownRemark.frontmatter.myrole}</h4>
-			</HeaderMetadata>
-		</HeaderColumn>
+		<Helmet title={data.site.siteMetadata.title + ' | ' + data.markdownRemark.frontmatter.title}>
+            <meta name="theme-color" content={data.markdownRemark.frontmatter.color}/>
+		</Helmet>
 		
-		</WorkPostTitle>
-	</WorkHeader>
+		<Date color={data.markdownRemark.frontmatter.color}>{data.markdownRemark.frontmatter.date}</Date>
 
-	<br/><br/><br/><br/>
+		<NoteHeader color={data.markdownRemark.frontmatter.color}>
+			<Img style={{position: 'absolute', top: 0, left: 0, width: '100%', height: `100%`}} fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid}/>
+			<NotePostTitle>{data.markdownRemark.frontmatter.title}</NotePostTitle>
+		</NoteHeader>
 
-	<ScrollAnimation>
-<div id="scroll-down-animation">
-  <span class="scroll-down-mouse">
-    <span class="scroll-down-move"></span>
-  </span>
-  <h5>Scroll down</h5>
-</div>
-</ScrollAnimation>
-	
-	<WorkContentGrid color={data.markdownRemark.frontmatter.color}>
+		<NoteDetails>
+				<div>
+					<ImageAuthor>
+						<li><mark id="myHeader"><Icon><FaRegImage size={iconSize2}/></Icon> {data.markdownRemark.frontmatter.imageauthor} <Icon><FaCreativeCommons size={iconSize2}/></Icon></mark></li>
+					</ImageAuthor>
+				</div>
+			</NoteDetails>
+			
+
+		<NoteContentGrid color={data.markdownRemark.frontmatter.color}>
 			<div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-			{data.markdownRemark.frontmatter.showLiveContent}
-		</WorkContentGrid>
+
+			{data.markdownRemark.frontmatter.showLiveContent && 
+				<LiveContentCard thumbnail={data.markdownRemark.frontmatter.image.childImageSharp.fluid.src} title={data.markdownRemark.frontmatter.title} url={data.markdownRemark.frontmatter.url} color={data.markdownRemark.frontmatter.color}/>
+			}
+		</NoteContentGrid>
 
 		<BackgroundColor color={data.markdownRemark.frontmatter.color}/>
+
 </Column>
 </Row>
 </PageGrid>
 
-
-
-
-
-<br/><br/><br/>
-
-		<FooterBanner>
-		<FooterContainer>
+<br/><br/>
+		<FooterBanner color={data.markdownRemark.frontmatter.color}>
+		<FooterContainer color={data.markdownRemark.frontmatter.color}>
 			<Footer>
-				<div><strong>Jude Park</strong> is a designer born in South Korea, based in Toronto. He likes Animal Crossing.</div>
+				<div><strong>Jude Park</strong> is a user experience designer working for the Government of Canada.</div>
 			</Footer>	
-	
+			
 				<SiteSocial>
 	  	<li>
 		<Link to="/">
@@ -141,7 +120,6 @@ export default function WorkTemplate({ data }) {
 		</FooterContainer>
 		</FooterBanner>
 
-
 		</React.Fragment>
 	)
 }
@@ -153,132 +131,68 @@ const PageGrid = styled.div`
 		grid-column: center;
 	}
 `
-
-const PageGrid2 = styled.div`
-    display: grid;
-	grid-template-columns: [start] minmax(24px, 1fr) [center] minmax(auto, 900px) [end] minmax(24px, 1fr);
-	& > * {
-		grid-column: center;
-	}
-`
-
 const Row = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 `
-
 const Column = styled.div`
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 100%;
-  @media (max-width: 1000px) {
-    flex: 100%;
-}
+  flex: 1;
+`
+
+const Date = styled.h5`
+	display: inline-block;
+	position: absolute;
+	margin-top: 30px;
+	animation: ${fadeInDown} 1s;
+	&::after {
+		content: "";
+		height: 3px;
+		width: 50px;
+		position: absolute;
+		bottom: -20px;
+		left: 0px;
+		background: ${props => props.color};
+	}
 `
 
 const Banner = styled.div`
-	width: 100%;
-	height: 100%;
-	opacity: 0.3;
-	position: fixed; 
-	transform: rotate(0deg);
+	width: 120vw;
+	content: "";
+	left: -5vw;
+	height: 105vh;
+	top: -65vh;
+	right: -30vw;
+	position: absolute;
+	transform: rotate(17.4deg);
 	--accent-color: ${props => props.color};
-	background: linear-gradient(
-		to bottom, 
-		#f8f7f3 0%,
-		var(--accent-color, black) 80%
-	  );
-
+	
+	background-image:
+    linear-gradient(to top left, #f8f7f3 0%, var(--accent-color, black) 100%),
+	url("https://64.media.tumblr.com/d6749c041b64221fff9f5d6d17ae54b2/ba709a90e08afdd0-bd/s640x960/33d3c31a10e78e5ff5ebab5f92fd3c1ceaddaa96.png");
+	background-blend-mode: multiply;
+		
 	z-index: -2;
 	@media (max-width: 1000px) {
-		position: absolute;
 		left: 0vw;
 		height: 50vh;
 		top: 18vh;
 		right: -30vw;
 		transform: rotate(0deg);
+		opacity: 0.5;
 		background: linear-gradient(to top, #f8f7f3 0%, var(--accent-color, black) 100%);
 	}
 `
 
-const HeaderTitle = styled.h1`
-	margin-bottom: 5px;
-	max-width: 400px;
-	margin-top: 40px;
-	font-weight: 800;
-	line-height: 1.3875;
-	&:hover {
-		animation: ${MoveUp} 0.3s;
-		animation-fill-mode: forwards;
-		color: hsla (0, 0%, 0%, 0.8);
-	  }
-	@media(max-width: 425px) {
-		margin-top: 130px;
-	}
-`
-
-const Line = styled.p`
-	width: 90%;
-	@media(max-width: 1000px) {
-		width: 100%;
-	}
-`
-
-const HeaderSubtitle = styled.h3`
-	margin-bottom: 24px;
-	max-width: 350px;
-	font-size: 21px;
-	color: rgba(0, 0, 0, 0.65);
-	font-weight: 400;
-	line-height: 34px;
-	@media(max-width: 425px) {
-
-	}
-`
-
-const HeaderColumn = styled.div`
-    columns: 2;
-    column-gap: 40px;
-    column-rule: 1.5px solid hsla(0, 0%, 0%, 0.2);
-    margin-bottom: 100px;
-    margin-right: 50px;
-	@media(max-width: 1000px) {
-		margin-bottom: 0px;
-		margin-right: 0px;
-	}
-`
-
-const HeaderDescription = styled.h4`
-	max-width: 100%;
-	min-height: 100px;
-    font-size: calc(10px + (12 - 10) * (100vw - 400px) / (1300 - 400) );
-    color: rgba(0, 0, 0, 0.65);
-    display: inline-block;
-	@media(max-width: 1000px) {
-		min-height: 100px;
-	}
-`
-
-const NonExistentLine = styled.div`
-
-`
-
-const HeaderMetadata = styled.div`
-        margin-bottom: 0px;
-        max-width: 600px;
-        height: 100px;
-		h4 {
-			font-size: calc(10px + (12 - 10) * (100vw - 400px) / (1300 - 400) );
-		}
-`
-
-const WorkHeader = styled.div`
+const NoteHeader = styled.div`
 	height: 325px;
 	display: flex;
 	justify-content: left;
+	align-items: flex-end;
 	position: relative;
 	padding: 0px 0px;
 
@@ -310,7 +224,7 @@ const WorkHeader = styled.div`
 	}
 `
 
-const WorkPostTitle = styled.h1`
+const NotePostTitle = styled.h1`
 	font-weight: 800;
     line-height: 1.3875;
 	text-align: left;
@@ -324,15 +238,13 @@ const WorkPostTitle = styled.h1`
 	@media(max-width: 1000px) {
 		font-size: 1.9rem;
 		line-height: 1.3;
+		background-color: #f8f7f3;
 		max-width: 100%;
-		margin-top: 300px;
-	}
-	@media(max-width: 455px) {
-		margin-top: 200px;
+		text-align: center;
 	}
 `
 
-const WorkContentGrid = styled.div`
+const NoteContentGrid = styled.div`
 	display: grid;
 	animation: ${fadeInDown} 1s;
 	width: 64.5%;
@@ -363,6 +275,69 @@ const WorkContentGrid = styled.div`
 	}
 `
 
+const NoteDetails = styled.div`
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	Z-index: 1;
+	
+
+	div {
+		padding-right: 0px;
+		padding-bottom: 0px;
+		width: 100%;
+	}
+
+	@media(max-width: 1155px) {
+		padding: 0px;
+    	margin-bottom: 0px;
+
+		div {
+			padding-right: 0px;
+			padding-bottom: 20px;
+			width: 49%;
+		}
+		div:last-child {
+			width: 100%;
+		}
+	}
+`
+
+const ImageAuthor = styled.div`
+	display: flex;
+	justify-content: flex-start;
+	writing-mode: vertical-rl;
+	align-items: flex-start;
+	list-style: none;
+	margin-right: 40px;
+	margin-left: 0px;
+	margin-bottom: 100px;
+	margin-top: -100px;
+	z-index: 3;
+	font-size: calc(10px + (12 - 10) * (100vw - 400px) / (1300 - 400) );
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	color: hsla(0, 0%, 0%, 0.50);
+	animation: ${fadeInDown} 1s;
+	li {
+		margin: 0;
+		padding: 0px 1px;
+	}
+	mark {
+		color: hsla(0, 0%, 0%, 0.50);
+	}
+	@media(max-width: 1000px) {
+		display: none;
+	}
+`
+
+const Icon = styled.div`
+	transform: rotate(90deg);
+	display: inline-block;
+	color: hsla(0, 0%, 0%, 0.50);
+`
 
 const BackgroundColor = styled.div`
 	position: fixed;
@@ -377,11 +352,13 @@ const BackgroundColor = styled.div`
 `
 
 const FooterBanner = styled.div`
-
-	background-image:url("https://64.media.tumblr.com/d6749c041b64221fff9f5d6d17ae54b2/ba709a90e08afdd0-bd/s640x960/33d3c31a10e78e5ff5ebab5f92fd3c1ceaddaa96.png");
+	--accent-color: ${props => props.color};
+	background-image:
+    linear-gradient(to top, #f8f7f3 0%, var(--accent-color, black) 200%),
+	url("https://64.media.tumblr.com/d6749c041b64221fff9f5d6d17ae54b2/ba709a90e08afdd0-bd/s640x960/33d3c31a10e78e5ff5ebab5f92fd3c1ceaddaa96.png");
 	background-blend-mode: multiply;
-	height: 280px;
 	
+	height: 280px;
 `
 
 const FooterContainer = styled.div`
@@ -400,7 +377,7 @@ const Footer = styled.div`
 	@media(max-width: 1000px) {
 		width: 100%;
 	}
-`
+` 
 
 const SiteSocial = styled.ul`
 	display: flex;
@@ -483,20 +460,14 @@ const SiteLogo = styled.img`
 	display: block;
 	padding-top: 0px;
 	padding-bottom: 0px;
- 
+
     @media(max-width: ${SIZE_MOBILE}) {
 
     }
 `
 
-const ScrollAnimation = styled.div`
-	@media(max-width: 1000px) {
-		display: none;
-	}
-`
-
 export const query = graphql`
-	query WorkBySlug($slug: String!) {
+	query ResearchBySlug($slug: String!) {
 		site {
 			siteMetadata {
 				title
@@ -505,11 +476,7 @@ export const query = graphql`
 		markdownRemark(fields: { slug: { eq: $slug } }) {
 			frontmatter {
 				title
-                workheading
-                worksummary
-                year
-                myrole
-                link
+				notebrief
 				imageauthor
 				date(formatString: "MMM D, YYYY")
 				color

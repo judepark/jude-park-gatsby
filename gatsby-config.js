@@ -51,14 +51,14 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${__dirname}/src/notes`,
-				name: 'notes',
+				path: `${__dirname}/src/research`,
+				name: 'research',
 			},
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${__dirname}/src/works`,
+				path: `${__dirname}/src/work`,
 				name: 'work',
 			},
 		},
@@ -74,7 +74,7 @@ module.exports = {
             options: {
               name: `Jude Park`,
               short_name: `Jude Park`,
-              description: `Jude Park is a designer born in South Korea, based in Toronto. He likes Animal Crossing.`,
+              description: `Jude Park is a designer born in South Korea, based in Toronto.`,
               start_url: `/`,
               background_color: `#000000`,
               theme_color: `#000000`,
