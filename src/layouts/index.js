@@ -33,6 +33,7 @@ const Layout = ({ children, data }) => (
     render={data => (
         <MainContainer>
             <Helmet title={data.site.siteMetadata.title}>
+                <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
                 <meta name="description" content={data.site.siteMetadata.description} />
                 <meta name="image" content={logo}/>
                 <meta itemprop="name" content="Jude Park"/>

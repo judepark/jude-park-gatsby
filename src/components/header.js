@@ -60,6 +60,13 @@ const SiteLogoContainer = styled.div`
 		letter-spacing: 1px;
 		color: hsla(0, 0%, 0%, 0.5);
 		font-weight: bold;
+		a:hover {
+        color: purple;
+        border: solid purple;
+        border-width: 0 0 thick 10px;
+        border-color: transparent purple purple transparent;
+        border-radius: 0 0 20px 0;
+      }
 
 		img {
 			align-items: center;

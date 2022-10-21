@@ -40,25 +40,18 @@ const AboutPage = ({data}) => (
 
       <Content>
       <ul style={{marginLeft: "0"}}>
-      <h3 style={{margin:"0", lineHeight:"1.25", fontWeight: "800"}}>User Experience Designer</h3>
-      <WorkLink><a href="http://www.ic.gc.ca/eic/site/icgc.nsf/eng/home" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Government of Canada</h4>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", margin:"0", lineHeight:"1.25"}}>Innovation, Science and Economic Development</h4></a></WorkLink>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", marginBottom: "20px"}}>2021-current</h4>
+      <h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>Design Lead</h3>
+      <WorkLink><a href="https://www.canada.ca/en/employment-social-development.html" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Employment and Social Development Canada</h4></a></WorkLink><br/><WorkLink><a href="https://ised-isde.canada.ca/site/ised/en" target="_blank" rel="noopener noreferrer"><h4 style={{lineHeight:"1.25", fontWeight: "400"}}>Innovation, Science and Economic Development</h4></a></WorkLink><br/><WorkLink><a href="https://tc.canada.ca/en" target="_blank" rel="noopener noreferrer"><h4 style={{lineHeight:"1.25", fontWeight: "400"}}>Transport Canada</h4></a></WorkLink>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", marginBottom: "20px"}}>2020-2022</h4>
       </ul>
       <ul style={{marginLeft: "0"}}>
-      <h3 style={{margin:"0", lineHeight:"1.25", fontWeight: "800"}}>Design Researcher</h3>
-      <WorkLink><a href="https://tc.canada.ca/en" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Government of Canada</h4>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", margin:"0", lineHeight:"1.25"}}>Transport Canada</h4></a></WorkLink>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", marginBottom: "20px"}}>2020-2021</h4>
-      </ul>
-      <ul style={{marginLeft: "0"}}>
-      <h3 style={{margin:"0", lineHeight:"1.25", fontWeight: "800"}}>UI & UX Designer</h3>
-      <WorkLink><a href="https://codefor.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Code for Canada</h4></a></WorkLink><br/><WorkLink><a href="https://www.ventureforcanada.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{color: "hsla(0, 0%, 0%, 0.65)", lineHeight:"1.25", fontWeight: "400"}}>Venture for Canada</h4></a></WorkLink><br/><WorkLink><a href="https://jobs.rbc.com/ca/en/amplify" target="_blank" rel="noopener noreferrer"><h4 style={{color: "hsla(0, 0%, 0%, 0.65)", lineHeight:"1.25", fontWeight: "400"}}>Royal Bank of Canada</h4></a></WorkLink>
+      <h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>UI & UX Designer</h3>
+      <WorkLink><a href="https://codefor.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Code for Canada</h4></a></WorkLink><br/><WorkLink><a href="https://www.ventureforcanada.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{lineHeight:"1.25", fontWeight: "400"}}>Venture for Canada</h4></a></WorkLink><br/><WorkLink><a href="https://jobs.rbc.com/ca/en/amplify" target="_blank" rel="noopener noreferrer"><h4 style={{lineHeight:"1.25", fontWeight: "400"}}>Royal Bank of Canada</h4></a></WorkLink>
       <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", marginBottom: "20px"}}>2016-2020</h4>
       </ul>
       <ul style={{marginLeft: "0"}}>
-      <h3 style={{margin:"0", lineHeight:"1.25", fontWeight: "800"}}>Librarian & Information Management</h3>
-      <WorkLink><a href="https://www.torontopubliclibrary.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Toronto Public Library</h4></a></WorkLink><br/><WorkLink><a href="https://its.utoronto.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{color: "hsla(0, 0%, 0%, 0.65)", lineHeight:"1.25", fontWeight: "400"}}>University of Toronto</h4></a></WorkLink><br/><WorkLink><a href="https://www.ontario.ca/page/government-ontario" target="_blank" rel="noopener noreferrer"><h4 style={{color: "hsla(0, 0%, 0%, 0.65)", lineHeight:"1.25", fontWeight: "400"}}>Ontario Public Service</h4></a></WorkLink>
+      <h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>Information Management</h3>
+      <WorkLink><a href="https://www.torontopubliclibrary.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{marginTop:"10px", lineHeight:"1.25", fontWeight: "400"}}>Toronto Public Library</h4></a></WorkLink><br/><WorkLink><a href="https://its.utoronto.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{lineHeight:"1.25", fontWeight: "400"}}>University of Toronto</h4></a></WorkLink><br/><WorkLink><a href="https://www.ontario.ca/page/government-ontario" target="_blank" rel="noopener noreferrer"><h4 style={{lineHeight:"1.25", fontWeight: "400"}}>Ontario Public Service</h4></a></WorkLink>
       <h4 style={{color: "hsla(0, 0%, 0%, 0.5)", marginBottom: "60px"}}>2009-2016</h4>
       </ul>
       </Content>
@@ -71,13 +64,13 @@ const AboutPage = ({data}) => (
       <Content>
       <ul style={{marginLeft: "0"}}>
       <h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>Master of Information</h3>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", marginTop:"10px", marginBottom:"10px", lineHeight:"1.35", fontWeight: "800"}}>Information Systems Design<br/>User Experience Design</h4>
+      <h4 style={{marginTop:"10px", marginBottom:"10px", lineHeight:"1.35", fontWeight: "400"}}>Information Systems Design<br/>User Experience Design</h4>
       <WorkLink><a href="https://www.utoronto.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>University of Toronto</h4></a></WorkLink>
       <h4 style={{color: "hsla(0, 0%, 0%, 0.50)", marginBottom: "20px"}}>2016-2018</h4>
       </ul>
       <ul style={{marginLeft: "0"}}>
       <h3 style={{margin:"0", lineHeight:"1.45", fontWeight: "800"}}>Bachelor of Arts</h3>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", marginTop:"10px", marginBottom:"10px", lineHeight:"1.35", fontWeight: "800"}}>Anthropology<br/>History<br/>Linguistics</h4>
+      <h4 style={{marginTop:"10px", marginBottom:"10px", lineHeight:"1.35", fontWeight: "400"}}>Anthropology<br/>History<br/>Linguistics</h4>
       <WorkLink><a href="https://www.trentu.ca/" target="_blank" rel="noopener noreferrer"><h4 style={{margin:"0", lineHeight:"1.45", fontWeight: "400"}}>Trent University</h4></a></WorkLink>
       <h4 style={{color: "hsla(0, 0%, 0%, 0.50)", marginBottom: "60px"}}>2009-2012, 2016</h4>
       </ul>
@@ -93,7 +86,8 @@ const AboutPage = ({data}) => (
       <Content>
       <ul style={{marginLeft: "0"}}>
       <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Korean</h4>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800", marginBottom: "60px"}}>English</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>English</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800", marginBottom: "60px"}}>French</h4>
       </ul>
       </Content>
 
@@ -186,11 +180,9 @@ const AboutPage = ({data}) => (
 
       <Content>
       <ul style={{marginLeft: "0"}}>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Inclusive Design</h4>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Usability Testing</h4>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Experience Mapping</h4>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Design Thinking Facilitation</h4>
-      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800", marginBottom: "60px"}}>Front-End Development</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Fair & Inclusive Design</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800"}}>Accessibility & Usability Testing</h4>
+      <h4 style={{color: "hsla(0, 0%, 0%, 0.80)", fontWeight:"800", marginBottom: "60px"}}>Experience Mapping</h4>
       </ul>
       </Content>
 
@@ -202,10 +194,11 @@ const AboutPage = ({data}) => (
       <Content>
       <ul style={{marginLeft: "0"}}>
       <h4 style={{marginBottom: "60px", maxWidth:"400px"}}>
-        My name is Jude and I currently work for the Government of Canada as a User Experience Designer.
+        My name is Jude and I currently work for the Government of Canada as a Design Lead at Service Canada.
+        <br/><br/>
         You can usually find me working in digital government initiatives, researching and designing services that help Canadians.
         <br/><br/>
-        Feel free to read through my CV and How I Work below. If you want to work together, let's chat.
+        Feel free to read through my CV and How I Work below. If you want get to together, let's chat.
       </h4>
       </ul>
       </Content> 
@@ -647,6 +640,7 @@ const WorkLink = styled.div`
   &:hover {
       animation: ${MoveUp} 0.3s;
       animation-fill-mode: forwards;
+      color: hsla(0, 0%, 0%, 0.80);
    }
  
 `

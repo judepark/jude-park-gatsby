@@ -7,7 +7,7 @@ const Footer = () => {
 	  <Navmenu>
 	<PageFooter>
 
-		<EmailLink>© {new Date().getFullYear()} Jude Park 💛 <br/> Built with Gatsby, deployed on Netlify</EmailLink>
+		<EmailLink>ⓒ {new Date().getFullYear()} Jude Park <br/> Built by Jude Park using Gatsby. Deployed on Netlify.</EmailLink>
 
 	</PageFooter>
 	</Navmenu>

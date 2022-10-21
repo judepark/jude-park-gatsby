@@ -20,7 +20,7 @@ const IndexPage = ({data}) => (
 			<Line>
 			<hr></hr>
 			</Line>
-			<HeaderSubtitle>Welcome! This is the site of a user experience (UX) designer with over six years of experience in facilitation, research and design. Based in Toronto.</HeaderSubtitle>
+			<HeaderSubtitle>Welcome!<br/><br/>This is the space of a user experience (UX) designer based in Toronto.</HeaderSubtitle>
 
 			<SiteSocial>
 				<li>
@@ -55,13 +55,6 @@ const IndexPage = ({data}) => (
 			</SiteSocial>
 		</Column>
 
-		<Column>
-
-		<Video>
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_JWrobohZYc" frameborder="0" title="Life Lessons from 100-Year-Olds" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
-		</Video>
-
-		</Column>
 		</Row>
 		</PageGrid>
 
@@ -257,6 +250,17 @@ const IndexPage = ({data}) => (
 			<HeaderSubtitle></HeaderSubtitle>
 			
 		</Column>
+
+		
+		<Column>
+
+		<Video>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_JWrobohZYc" frameborder="0" title="Life Lessons from 100-Year-Olds" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+		</Video>
+
+		</Column>
+
+		
 		</Row>
 		</PageGrid>
 

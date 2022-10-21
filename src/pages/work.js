@@ -108,7 +108,7 @@ const WorkPage = ({data}) => (
             <Line>
             <hr></hr>
             </Line>
-            <HeaderSubtitle>Projects I worked on.</HeaderSubtitle>
+            <HeaderSubtitle>Things I worked on.</HeaderSubtitle>
         </Column>
 
         <Column>
