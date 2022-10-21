@@ -32,7 +32,7 @@ html {
 }
 body {
 	font-family: 'Product Sans', sans-serif;
-	margin: 0px 15px 0px 15px;
+	margin: 0;
 	background: #f8f7f3;
 	color: hsla(0, 0%, 0%, 0.80);
 	min-height: 100%;
