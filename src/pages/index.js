@@ -20,7 +20,7 @@ const IndexPage = ({data}) => (
 			<Line>
 			<hr></hr>
 			</Line>
-			<HeaderSubtitle>Welcome!<br/><br/>This is the space of a user experience (UX) designer based in Toronto.</HeaderSubtitle>
+			<HeaderSubtitle>Welcome!<br/><br/>This is a space where I share who I am as a user experience (UX) designer based in Toronto.</HeaderSubtitle>
 
 			<SiteSocial>
 				<li>
