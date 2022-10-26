@@ -105,7 +105,7 @@ const AboutPage = ({data}) => (
         <ToolShelf>
           
           <div class="grid-img">
-            <img src="https://64.media.tumblr.com/3989de26cb05b3503924882c14e7a8cc/6d5fde614fe47287-bd/s640x960/3326505e3b5c37fcfe68f1fca338acc65ad4574f.png" alt="Figma" width="60"></img>
+            <img src="https://64.media.tumblr.com/3989de26cb05b3503924882c14e7a8cc/6d5fde614fe47287-bd/s640x960/3326505e3b5c37fcfe68f1fca338acc65ad4574f.png" alt="Figma Logo" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
             Figma
@@ -113,7 +113,7 @@ const AboutPage = ({data}) => (
           </div>
           
           <div class="grid-img">
-            <img src="https://64.media.tumblr.com/aff84866df52830e1291de352a73fbea/a24a727ed83cabb8-59/s500x750/f33e96a5235de60916c23a05013cd7163ca249d3.png" alt="Airtable" width="60"></img>
+            <img src="https://64.media.tumblr.com/aff84866df52830e1291de352a73fbea/a24a727ed83cabb8-59/s500x750/f33e96a5235de60916c23a05013cd7163ca249d3.png" alt="Airtable Logo" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
             Airtable
@@ -121,7 +121,7 @@ const AboutPage = ({data}) => (
           </div>
 
           <div class="grid-img">
-            <img src="https://64.media.tumblr.com/78b2001a45bb8a56c36e34037288cfb6/2fed1712a927064c-5e/s640x960/9ee311d32910538df4147c9c50aa82630c380c5f.png" alt="Procreate" width="60"></img>
+            <img src="https://64.media.tumblr.com/78b2001a45bb8a56c36e34037288cfb6/2fed1712a927064c-5e/s640x960/9ee311d32910538df4147c9c50aa82630c380c5f.png" alt="Procreate Logo" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
             Procreate
@@ -129,7 +129,7 @@ const AboutPage = ({data}) => (
           </div>
 
           <div class="grid-img">
-            <img src="https://66.media.tumblr.com/0cded3a3276425911d55a2552bf361bf/tumblr_pwpktsX5HV1taz7avo1_1280.png" alt="JavaScript" width="60"></img>
+            <img src="https://66.media.tumblr.com/0cded3a3276425911d55a2552bf361bf/tumblr_pwpktsX5HV1taz7avo1_1280.png" alt="JavaScript Logo" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
             JavaScript
@@ -137,7 +137,7 @@ const AboutPage = ({data}) => (
           </div>
 
           <div class="grid-img">
-            <img src="https://66.media.tumblr.com/aab3e12a5e711fdb5a616313754e65cd/tumblr_pwpexqLa9N1taz7avo1_1280.png" alt="InDesign" width="60"></img>
+            <img src="https://66.media.tumblr.com/aab3e12a5e711fdb5a616313754e65cd/tumblr_pwpexqLa9N1taz7avo1_1280.png" alt="InDesign Logo" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
             InDesign
@@ -145,7 +145,7 @@ const AboutPage = ({data}) => (
           </div>
 
           <div class="grid-img">
-            <img src="          https://64.media.tumblr.com/55fd5f506fdf92a5a8f0bc1ca5090029/fa5aafd1e8e637bf-ba/s500x750/56bf0fd9d6ed8ed98e299283a797e5d8595bec89.gifv" alt="Tableau" width="60"></img>
+            <img src="          https://64.media.tumblr.com/55fd5f506fdf92a5a8f0bc1ca5090029/fa5aafd1e8e637bf-ba/s500x750/56bf0fd9d6ed8ed98e299283a797e5d8595bec89.gifv" alt="Tableau Logo" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
             Tableau
@@ -154,7 +154,7 @@ const AboutPage = ({data}) => (
 
 
           <div class="grid-img">
-            <img src="https://66.media.tumblr.com/e8293f9c4ccbd080dbcc29c2609ea9d4/43ee8e5089c2299d-02/s640x960/70225bb23fb3ccb16cf769dd3d2f81fa24161e59.png" alt="Blender" width="60"></img>
+            <img src="https://66.media.tumblr.com/e8293f9c4ccbd080dbcc29c2609ea9d4/43ee8e5089c2299d-02/s640x960/70225bb23fb3ccb16cf769dd3d2f81fa24161e59.png" alt="Blender Logo" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
             Blender
@@ -162,7 +162,7 @@ const AboutPage = ({data}) => (
           </div>
 
           <div class="grid-img">
-            <img src="https://66.media.tumblr.com/52633729d85703723cf52f8ca5000f9c/tumblr_pwsp9kLocD1taz7avo1_1280.png" alt="After Affects" width="60"></img>
+            <img src="https://66.media.tumblr.com/52633729d85703723cf52f8ca5000f9c/tumblr_pwsp9kLocD1taz7avo1_1280.png" alt="After Affects Logo" width="60"></img>
             
             <Item style={{marginRight: "10px"}}>
             After Effects

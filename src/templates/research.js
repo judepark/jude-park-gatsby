@@ -78,40 +78,40 @@ export default function Template({ data }) {
 				<SiteSocial>
 	  	<li>
 		<Link to="/">
-		<SiteLogo src={logo}/>
+		<SiteLogo src={logo} alt="Home link"/>
 		</Link>
 	  	</li>
       	<li>
         <IconEnvelope>
-				<a href="mail:jude@judepark.com" rel="noopener noreferrer">
+				<a href="mail:jude@judepark.com" rel="noopener noreferrer" title="mail to jude@judepark.com Email icon">
 					<FaEnvelope size={iconSize}/>
 				</a>
         </IconEnvelope>
 	  	</li>
       	<li>
         <IconDribble>
-				<a href="https://dribbble.com/judepark/" target="_blank" rel="noopener noreferrer">
+				<a href="https://dribbble.com/judepark/" target="_blank" rel="noopener noreferrer" title="Dribble icon">
 					<FaDribbble size={iconSize}/>
 				</a>
         </IconDribble>
 	    </li>
 		<li>
         <IconGithub>
-				<a href="https://github.com/judepark/" target="_blank" rel="noopener noreferrer">
+				<a href="https://github.com/judepark/" target="_blank" rel="noopener noreferrer" title="Github icon">
 					<FaGithub size={iconSize}/>
 				</a>
         </IconGithub>
 		</li>
 		<li>
         <IconLinkedin>
-				<a href="https://www.linkedin.com/in/judepark/" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.linkedin.com/in/judepark/" target="_blank" rel="noopener noreferrer" title="LinkedIn icon">
 					<FaLinkedin size={iconSize}/>
 				</a>
         </IconLinkedin>
 		</li>
 		<li>
         <IconTwitter>
-				<a href="https://twitter.com/judepark/" target="_blank" rel="noopener noreferrer">
+				<a href="https://twitter.com/judepark/" target="_blank" rel="noopener noreferrer" title="Twitter icon">
 					<FaTwitter size={iconSize}/>
 				</a>
         </IconTwitter>

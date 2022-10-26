@@ -9,7 +9,7 @@ const Header = () => (
 		<SiteLogoContainer>
 
 			<Link to="/">
-				<SiteLogo src={logo} />
+				<SiteLogo src={logo} alt="Home link"/>
 			</Link>
 
 			<LinkDisplay>
